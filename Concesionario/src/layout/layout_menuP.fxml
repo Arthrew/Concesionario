@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladoras.ControladoraMenuPrinc">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="home" mnemonicParsing="false" text="Home">
+            <items>
+              <MenuItem fx:id="informacion" mnemonicParsing="false" text="Informacion" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Opciones">
+            <items>
+                  <Menu mnemonicParsing="false" text="Comprar">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Coches" />
+                        <MenuItem mnemonicParsing="false" text="Motos" />
+                        <MenuItem mnemonicParsing="false" text="Ciclomotores" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Ventas">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Coches" />
+                        <MenuItem mnemonicParsing="false" text="Motos" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" text="Renting" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Contactanos" />
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <ListView fx:id="lista" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

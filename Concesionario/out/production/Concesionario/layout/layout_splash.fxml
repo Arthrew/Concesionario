@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controladoras.ControladoraSplash">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" valignment="CENTER" vgrow="ALWAYS" />
+    <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+  </rowConstraints>
+   <children>
+      <ImageView fx:id="imagenFondo" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../resources/asd.jpg" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="progreso" maxWidth="1.7976931348623157E308" prefHeight="11.0" prefWidth="598.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Text fx:id="texto" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenidos" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets top="30.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</GridPane>
